@@ -1,0 +1,22 @@
+{
+  "name": "ynab-kate-report",
+  "version": "1.0.0",
+  "description": "Generates Text-based report to send to Kate for weekly status updates",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "ynab": "./index.js"
+  },
+  "author": "Ales Standiford",
+  "license": "ISC",
+  "dependencies": {
+    "colors": "^1.3.3",
+    "commander": "^2.20.0",
+    "dotenv": "^8.0.0",
+    "pug": "^2.0.4",
+    "shelljs": "^0.8.3",
+    "ynab": "^1.14.0"
+  }
+}

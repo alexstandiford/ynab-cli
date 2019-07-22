@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 require( 'dotenv' ).config( {
-	path: '/Users/alexstandiford/custom-bash-scripts/ynab/.env'
+	path: `${__dirname}/.env`
 } );
 const program = require( 'commander' );
 

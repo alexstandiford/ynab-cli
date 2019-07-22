@@ -19,7 +19,7 @@ class Report extends Command{
 		this.subHeadingDivider = "-------------------------------\n";
 		this.months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 		this.categoryGroups = false;
-		this.directory = flags.dir !== false ? flags.dir : '/Users/alexstandiford/Documents/financial-reports';
+		this.directory = flags.dir !== false ? flags.dir : process.env.REPORT_DIR;
 		this.fileName = flags.name !== false ? flags.name : 'Report - ' + new Date().toDateString();
 	}
 

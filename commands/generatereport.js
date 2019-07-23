@@ -6,7 +6,7 @@ module.exports = ( program ) => {
 		.version( '1.0.0' )
 		.option( '--name <string>', 'Overwrites file name', false )
 		.option( '--dir <string>', 'Overwrites file name and location to save this file', false )
-		.option( '--skip <string>', 'Comma separated list of categories to skip.', "Someday Maybe,Hidden Categories,Internal Master Category,Credit Card Payments,Monthly Bills,Online Subscriptions,Income,Other" )
+		.option( '--skip <string>', 'Comma separated list of categories to skip.', process.env.CATEGORIES_TO_SKIP )
 		.description( 'generates a plain text report to send' )
 		.action( ( budget, cmd ) => {
 			const report = new Report( budget, cmd );
